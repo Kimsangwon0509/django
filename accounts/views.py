@@ -17,7 +17,8 @@ def login(request) :
         if form.is_valid() :
             # 세션 CREATE/ form.get_user 는 User 객체 반환
             auth_login(request, form.get_user())
-            return redirect('articles:index')
+            return "login page"
+            #return redirect('articles:index')
         else :
             form = AuthenticationForm()
 
@@ -28,3 +29,7 @@ def login(request) :
 
 def index(request) :
     return HttpResponse("Hello, world!")
+
+def index2(request) :
+    msg = 'test Msg'
+    return render(request, 'accounts/login.html',{'message' : msg})
