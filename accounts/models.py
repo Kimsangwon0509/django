@@ -17,3 +17,11 @@ class user(models.Model) :
 # FileField -> 파일 필드
 # ImageField -> 파일 필드의 파생클래스로 이미지 파일 체크
 # UUIDField -> UUID 저장 필드
+
+# -- 필드 옵션
+# null -> null= true 이면 , Empty 값을 DB 에 Null로 저장
+# blank -> blank= false이면 필드가 required 필드이다.
+# primary_key -> 해당 필드가 primary key 임을 표시
+# unique -> 해당 필드가 테이블에서 unique함을 표시
+# default -> 필드의 디폴트 값을 지정 ex) models.CharField(max_length = 2, default = "WA")
+# db_column -> 컬럼명은 디폴트로 필드명을 사용하는데, 만약 다르게 쓸 경우 지정
