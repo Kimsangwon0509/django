@@ -93,6 +93,7 @@ DATABASES = {
     }
 }
 
+SQLALCHEMY_DATABASE_URL = 'mysql+mysqldb://admin:1234@localhost:3306:localDB'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
