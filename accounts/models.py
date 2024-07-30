@@ -5,6 +5,8 @@ class user(models.Model) :
     name = models.CharField(max_length=100)
     email = models.EmailField
 
+    def __str__(self):
+        return self.name
 # -- 필드 타입
 # 모델의 필드에는 다양한 타입이 있음 ( https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types ) 참고
 # CharField -> 제한된 문자열 필드 타입

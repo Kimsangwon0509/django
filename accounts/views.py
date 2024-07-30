@@ -2,7 +2,6 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.http import HttpResponse
 from django.shortcuts import render,redirect
 from django.contrib.auth import login as auth_login
-
 # https://velog.io/@swhan9404/django%EC%9D%98-Auth-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%EB%93%B1
 # http://pythonstudy.xyz/python/article/304-Django-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8
 # view.py는 데이터를 MODEl에서 가져와 가공하여, 웹페이즈 결과를 만들도록 컨트롤 하는 역활을 한다.
